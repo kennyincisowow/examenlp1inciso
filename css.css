@@ -5,9 +5,12 @@
 body{
   background-image: url("img/car.jpg");
 }
+
+
+
 #BIENVENIDA{
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
-  color: red;
+  color: aqua;
 }
 .contenedor{
   background-color: #D6DBDF;
@@ -29,11 +32,14 @@ ul li a{
 }
 ul li a:hover{
   color: rgb(4, 111, 252);
+  height: 90px;
   
 }
 nav{
   background-color: blue;
-  width: 100%;
+  width: 90%;
+  
+  
   
 }
 .contenedor{
@@ -41,9 +47,6 @@ nav{
   height: 80%;
   background-color: white;
   
-}
-img{
- 
 }
 .cabecera{
   width: 100%;

@@ -1,85 +1,85 @@
-function mostrarInicio(){
+function Inicio(){
     document.getElementById('inicio').style.display = 'block';
     document.getElementById('ventas').style.display = 'none';
     document.getElementById('reportes').style.display = 'none';
-    document.getElementById('clientes').style.display = 'none';
+    document.getElementById('persona').style.display = 'none';
     document.getElementById('productos').style.display = 'none';   
 }
-function mostrarVentas(){
+function Ventas(){
     document.getElementById('inicio').style.display = 'none';
     document.getElementById('ventas').style.display = 'block';
     document.getElementById('reportes').style.display = 'none';
-    document.getElementById('clientes').style.display = 'none';
+    document.getElementById('persona').style.display = 'none';
     document.getElementById('productos').style.display = 'none';   
 }
-function mostrarReportes(){
+function Reportes(){
     document.getElementById('inicio').style.display = 'none';
     document.getElementById('ventas').style.display = 'none';
     document.getElementById('reportes').style.display = 'block';
-    document.getElementById('clientes').style.display = 'none';
+    document.getElementById('persona').style.display = 'none';
     document.getElementById('productos').style.display = 'none';   
 }
 
-function mostrarClientes(){
+function Clientes(){
     document.getElementById('inicio').style.display = 'none';
     document.getElementById('ventas').style.display = 'none';
     document.getElementById('reportes').style.display = 'none';
-    document.getElementById('clientes').style.display = 'block';
+    document.getElementById('persona').style.display = 'block';
     document.getElementById('productos').style.display = 'none';   
 }
 
-function mostrarProductos(){
+function Productos(){
     document.getElementById('inicio').style.display = 'none';
     document.getElementById('ventas').style.display = 'none';
     document.getElementById('reportes').style.display = 'none';
-    document.getElementById('clientes').style.display = 'none';
+    document.getElementById('persona').style.display = 'none';
     document.getElementById('productos').style.display = 'block';   
 }
-function mostrarCliente(){
+function Cliente(){
     document.getElementById('inicio').style.display = 'none';
     document.getElementById('ventas').style.display = 'none';
     document.getElementById('reportes').style.display = 'none';
-    document.getElementById('clientes').style.display = 'block';
+    document.getElementById('persona').style.display = 'block';
     document.getElementById('productos').style.display = 'none';  
 }
 function guardarCliente(){
-       var holaa=document.getElementById("hola").value;
-   var ddd= document.getElementById("Clientee").value = holaa; 
+       var personanna=document.getElementById("pers1").value;
+   var prec= document.getElementById("personass").value =personanna; 
 
-    if(ddd ==""){
+    if(prec ==""){
         alert("vacio");
     } else{
     document.getElementById('inicio').style.display = 'none';
     document.getElementById('ventas').style.display = 'block';
     document.getElementById('reportes').style.display = 'none';
-    document.getElementById('clientes').style.display = 'none';
+    document.getElementById('persona').style.display = 'none';
     document.getElementById('productos').style.display = 'none'; 
     }
    
 }
-function mostrarProducto(){
+function Producto(){
     document.getElementById('inicio').style.display = 'none';
     document.getElementById('ventas').style.display = 'none';
     document.getElementById('reportes').style.display = 'none';
-    document.getElementById('clientes').style.display = 'none';
+    document.getElementById('persona').style.display = 'none';
     document.getElementById('productos').style.display = 'block';  
 }
 function guardarProducto(){
     
-    var p1=document.getElementById("holap").value;
-    var p2=document.getElementById("holap2").value;
-    var p3=document.getElementById("holap3").value;
+    var p1=document.getElementById("produc").value;
+    var p2=document.getElementById("produc2").value;
+    var p3=document.getElementById("produc3").value;
    
-    var dddd= document.getElementById("Productoo").value = p1; 
+    var produc= document.getElementById("Productoo").value = p1; 
     
 
-    if(dddd ==""){
+    if(produc ==""){
         alert("vacio");
     }else{
         document.getElementById('inicio').style.display = 'none';
         document.getElementById('ventas').style.display = 'block';
         document.getElementById('reportes').style.display = 'none';
-        document.getElementById('clientes').style.display = 'none';
+        document.getElementById('persona').style.display = 'none';
         document.getElementById('productos').style.display = 'none'; 
         document.getElementById("Precioo").value = p2;
         document.getElementById("Cantidadd").value = p3;
@@ -87,7 +87,7 @@ function guardarProducto(){
 }
 var tablaR= document.getElementById("tablaReportes");
 i=1;
-function enviarP(){
+function enviar(){
    
     var pro =document.getElementById("Productoo").value;
     var prec =document.getElementById("Precioo").value;
@@ -121,7 +121,7 @@ function enviarP(){
         document.getElementById('productos').style.display = 'none'; 
     }
 }
-function eliminarP(p){
+function eliminar(p){
     if(confirm("¿Desea Eliminar?...")){
         var i = p.parentNode.parentNode.rowIndex;
         console.log(i);

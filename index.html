@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css.css">
-    <title>Document</title>
+    <title>Sitema de productos</title>
 </head>
 
 <body>
@@ -19,11 +19,11 @@
         <nav>
             <ul>
                 <li>
-                    <a onclick="mostrarInicio()">Inicio</a>
-                    <a onclick="mostrarVentas()">ventas</a>
-                    <a onclick="mostrarReportes()">Reportes</a>
-                    <a onclick="mostrarClientes()">Clientes</a>
-                    <a onclick="mostrarProductos()">Productos</a>
+                    <a onclick="Inicio()">Inicio</a>
+                    <a onclick="Ventas()">ventas</a>
+                    <a onclick="Reportes()">Reportes</a>
+                    <a onclick="Clientes()">Clientes</a>
+                    <a onclick="Productos()">Productos</a>
                 </li>
             </ul>
         </nav>
@@ -35,13 +35,13 @@
             <h1  style="text-align:left;padding:15px;">ventas</h1>
             <hr>
             <label for="">Cliente</label>
-            <input type="text" placeholder="Cliente..." id="Clientee"> <button onclick="mostrarCliente()"><img src="img/buscar.jpg" width="20px" height="20px" alt=""></button><br>
-            <button onclick="mostrarProducto()"><img src="img/compras.png" width="20px" height="20px" alt="" > Producto</button><br>
+            <input type="text" placeholder="Cliente..." id="personass"> <button onclick="Cliente()"><img src="img/buscar.jpg" width="20px" height="20px" alt=""></button><br>
+            <button onclick="Producto()"><img src="img/compras.png" width="20px" height="20px" alt="" > Producto</button><br>
 
             <input type="text" placeholder="Producto..." id="Productoo">
             <input type="text" placeholder="Precio..." id="Precioo">
             <input type="text" placeholder="Cantidad..." id="Cantidadd"><br>
-            <button onclick="enviarP()">Enviar</button>
+            <button onclick="enviar()">Enviar</button>
         </aside>
         <aside style="display: none;" id="reportes">
             <h2 style="text-align:left;padding:15px;">REPORTES</h2>
@@ -65,7 +65,7 @@
                 </tr>
             </table>
         </aside>
-        <aside style="display: none;" id="clientes">
+        <aside style="display: none;" id="persona">
             <h2 style="text-align:left;padding:15px;">Clientes</h2>
             <hr>
             <table class="customers"  id="tablitaClientes">
@@ -79,28 +79,28 @@
                 </tr>
                 <tr>
                     <td>C001</td>
-                    <td><input type="hidden" id="hola" value="kenny">kenny</td>
+                    <td><input type="hidden" id="pers1" value="kenny">kenny</td>
                     <td>Reyna</td>
                     <td>33565412</td>
                     <td ><img src="img/usuario.png" alt="" width="20px" height="20px" onclick="guardarCliente()"></td>
                 </tr>
                 <tr>
                     <td>C002</td>
-                    <td><input type="hidden" id="hola" value="David">David</td>
+                    <td><input type="hidden" id="pers1" value="David">David</td>
                     <td>Reyna</td>
                     <td>33565412</td>
                     <td ><img src="img/usuario.png" alt="" width="20px" height="20px" onclick="guardarCliente()"></td>
                 </tr>
                 <tr>
                     <td>C003</td>
-                    <td><input type="hidden" id="hola" value="Jose">Jose</td>
+                    <td><input type="hidden" id="pers1" value="Jose">Jose</td>
                     <td>Reyna</td>
                     <td>33565412</td>
                     <td ><img src="img/usuario.png" alt="" width="20px" height="20px" onclick="guardarCliente()"></td>
                 </tr>
                 <tr>
                     <td>C004</td>
-                    <td><input type="hidden" id="hola" value="Michael">Michael</td>
+                    <td><input type="hidden" id="pers1" value="Michael">Michael</td>
                     <td>Reyna</td>
                     <td>33565412</td>
                     <td ><img src="img/usuario.png" alt="" width="20px" height="20px" onclick="guardarCliente()"></td>
@@ -120,31 +120,31 @@
 
                 </tr>
                 <tr>
-                    <td><input type="hidden" id="holap" value="Mouse">P001</td>
+                    <td><input type="hidden" id="produc" value="Mouse">P001</td>
                     <td>Mouse</td>
-                    <td><input type="hidden" id="holap2" value="25">25</td>
-                    <td><input type="hidden" id="holap3" value="20">20</td>
+                    <td><input type="hidden" id="produc2" value="25">25</td>
+                    <td><input type="hidden" id="produc3" value="20">20</td>
                     <td><img src="img/compras.png" alt="" width="20px" height="20px" onclick="guardarProducto()"></td>
                 </tr>
                 <tr>
-                   <td><input type="hidden" id="holap" value="Mouse">P002</td>
+                   <td><input type="hidden" id="produc" value="Mouse">P002</td>
                     <td>Mouse</td>
-                    <td><input type="hidden" id="holap2" value="25">25</td>
-                    <td><input type="hidden" id="holap3" value="20">20</td>
+                    <td><input type="hidden" id="produc2" value="25">25</td>
+                    <td><input type="hidden" id="produc3" value="20">20</td>
                     <td><img src="img/compras.png" alt=""width="20px" height="20px" onclick="guardarProducto()" ></td>
                 </tr>
                 <tr>
-                        <td><input type="hidden" id="holap" value="Mouse">P003</td>
+                        <td><input type="hidden" id="produc" value="Mouse">P003</td>
                         <td>Mouse</td>
-                        <td><input type="hidden" id="holap2" value="25">25</td>
-                        <td><input type="hidden" id="holap3" value="20">20</td>
+                        <td><input type="hidden" id="produc2" value="25">25</td>
+                        <td><input type="hidden" id="produc3" value="20">20</td>
                         <td><img src="img/compras.png" alt="" width="20px" height="20px"onclick="guardarProducto()"></td>
                 </tr>
                 <tr>
-                        <td><input type="hidden" id="holap" value="Mouse">P004</td>
+                        <td><input type="hidden" id="produc" value="Mouse">P004</td>
                         <td>Mouse</td>
-                        <td><input type="hidden" id="holap2" value="25">25</td>
-                        <td><input type="hidden" id="holap3" value="20">20</td>
+                        <td><input type="hidden" id="produc2" value="25">25</td>
+                        <td><input type="hidden" id="produc3" value="20">20</td>
                         <td><img src="img/compras.png" alt="" width="20px" height="20px" onclick="guardarProducto()"></td>
                 </tr>
             </table>
