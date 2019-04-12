@@ -1,0 +1,87 @@
+*{
+  text-align: center;
+  margin: auto;   
+}
+body{
+  background-image: url("img/car.jpg");
+}
+#BIENVENIDA{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
+  color: red;
+}
+.contenedor{
+  background-color: #D6DBDF;
+  margin-top: 100px;
+}
+ul li{
+  display: inline;
+  
+  
+}
+ul li a{
+  text-decoration: none;
+  margin: 0px 5px 4px 10px; 
+  color: black;
+  font-family: arial;
+  margin-bottom: 10px;
+
+  
+}
+ul li a:hover{
+  color: rgb(4, 111, 252);
+  
+}
+nav{
+  background-color: blue;
+  width: 100%;
+  
+}
+.contenedor{
+  width: 60%;
+  height: 80%;
+  background-color: white;
+  
+}
+img{
+ 
+}
+.cabecera{
+  width: 100%;
+  height: 100px;
+  background-color:white;
+  margin-top: 0px;
+  float: left;
+  
+}
+.aa{
+  margin:50px;
+}
+aside{
+  width: 100%;
+  background-color: white;
+  height: 500px;
+
+}
+.customers {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 70%;
+  margin-top: 50px;
+}
+
+.customers td, .customers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.customers tr:nth-child(even){background-color: #f2f2f2;}
+
+.customers tr:hover {background-color: #ddd;}
+
+.customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: white;
+  color: black;
+}
