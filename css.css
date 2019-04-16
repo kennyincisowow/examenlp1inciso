@@ -32,12 +32,12 @@ ul li a{
 }
 ul li a:hover{
   color: rgb(4, 111, 252);
-  height: 90px;
+  height: 60px;
   
 }
 nav{
   background-color: blue;
-  width: 90%;
+  width: 70%;
   
   
   

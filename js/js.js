@@ -3,7 +3,7 @@ function Inicio(){
     document.getElementById('ventas').style.display = 'none';
     document.getElementById('reportes').style.display = 'none';
     document.getElementById('persona').style.display = 'none';
-    document.getElementById('productos').style.display = 'none';   
+    document.getElementById('productos').style.display = 'none';  
 }
 function Ventas(){
     document.getElementById('inicio').style.display = 'none';
@@ -42,6 +42,9 @@ function Cliente(){
     document.getElementById('persona').style.display = 'block';
     document.getElementById('productos').style.display = 'none';  
 }
+
+//otra parte del codigo
+
 function guardarCliente(){
        var personanna=document.getElementById("pers1").value;
    var prec= document.getElementById("personass").value =personanna; 
@@ -86,6 +89,9 @@ function guardarProducto(){
     }
 }
 var tablaR= document.getElementById("tablaReportes");
+
+
+
 i=1;
 function enviar(){
    
@@ -121,15 +127,8 @@ function enviar(){
         document.getElementById('productos').style.display = 'none'; 
     }
 }
-function eliminar(p){
-    if(confirm("¿Desea Eliminar?...")){
-        var i = p.parentNode.parentNode.rowIndex;
-        console.log(i);
-        tablaR.deleteRow(i);
-    }else{
-        alert("No se pudo eliminar...!!!")
-    }
-}
+
+
 
 
 
